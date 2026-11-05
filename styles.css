@@ -42,3 +42,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .links a{margin-right:16px}
 @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}.plans{grid-template-columns:1fr}nav a:not(.btn){display:none}}
 @media(max-width:520px){.steps{grid-template-columns:1fr}section{padding:60px 0}.hero{padding:64px 0 56px}}
+
+.formcard-embed{padding:0;overflow:hidden}
+.formcard-embed iframe{display:block;border:0;min-height:920px;background:#fff}
+.formcard-embed .micro{padding:14px 18px 18px;margin:0}

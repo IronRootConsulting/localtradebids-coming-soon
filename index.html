@@ -53,26 +53,10 @@
 <section id="waitlist"><div class="wrap">
   <h2>Be the first to know when we launch</h2>
   <p class="lead">Leave your email and we'll let you know when LocalTradeBids opens in your area.</p>
-  <div class="formcard">
-    <!-- WAITLIST_FORM_URL: placeholder form. Replace action="#" (or swap this block for a Google Form / Tally embed or link) after Andrew approves. -->
-    <div class="ph-note">Placeholder form — waitlist provider not yet connected.</div>
-    <form id="waitlist-form" action="#" method="post" novalidate>
-      <label for="email">Email address</label>
-      <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email">
-      <label for="company">Company name <small>(optional)</small></label>
-      <input id="company" name="company" type="text" autocomplete="organization">
-      <label for="trade">Trade <small>(optional)</small></label>
-      <input id="trade" name="trade" type="text" placeholder="e.g., Roofing, Paving, Electrical">
-      <label for="counties">Counties or region of interest <small>(optional)</small></label>
-      <input id="counties" name="counties" type="text" placeholder="e.g., Collier, Lee">
-      <button class="btn" type="submit">Notify me</button>
-      <p class="micro">We'll only email you launch updates. No spam, and you can unsubscribe at any time.</p>
-      <div class="msg ok" id="ok">Thanks — you're on the list. We'll email you when LocalTradeBids launches.</div>
-      <div class="msg err" id="err">Something went wrong. Please check your email address and try again, or contact <a href="mailto:support@localtradebids.com">support@localtradebids.com</a>.</div>
-    </form>
+  <div class="formcard formcard-embed">
+    <iframe title="LocalTradeBids waitlist" src="https://docs.google.com/forms/d/e/1FAIpQLScRsTCBMK718Mqs-U_QHfmgHh6zLhuGg6v-riqU-4Hqy8GtTw/viewform?embedded=true" width="100%" height="920" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">Loading…</iframe>
+    <p class="micro">Trouble with the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLScRsTCBMK718Mqs-U_QHfmgHh6zLhuGg6v-riqU-4Hqy8GtTw/viewform" target="_blank" rel="noopener">Open the waitlist in a new tab</a>. We'll only email you launch updates.</p>
   </div>
-  <!-- WAITLIST_FORM_URL: point this "Get notified" link at the hosted Google Form / Tally URL once approved. -->
-  <p class="notify-out"><a class="btn ghost" id="notify-link" href="#waitlist">Get notified</a></p>
 </div></section>
 
 <section id="support" class="alt contact"><div class="wrap">
@@ -90,14 +74,5 @@
   <div class="links"><a href="#/terms">Terms</a><a href="#/privacy">Privacy</a></div>
 </div></footer>
 
-<script>
-// Placeholder handler: validates email and shows the success/error copy. No data is sent anywhere.
-document.getElementById('waitlist-form').addEventListener('submit',function(e){
-  e.preventDefault();
-  var em=document.getElementById('email'),ok=document.getElementById('ok'),err=document.getElementById('err');
-  var valid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim());
-  ok.style.display=valid?'block':'none';err.style.display=valid?'none':'block';
-});
-</script>
 </body>
 </html>
